@@ -1,0 +1,24 @@
+{
+  "name": "linter-raml",
+  "main": "./lib/linter-raml",
+  "version": "0.1.0",
+  "description": "Lint RAML documentation on the fly using raml-cop",
+  "repository": "https://github.com/atom/linter-raml",
+  "license": "MIT",
+  "keywords": [
+  ],
+  "engines": {
+    "atom": ">=0.180.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-linter": "^3.0.0",
+    "raml-parser": "^0.8.11"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
