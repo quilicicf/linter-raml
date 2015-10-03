@@ -1,10 +1,9 @@
 linter-raml
 =========================
 
-This linter plugin for [Linter](https://github.com/AtomLinter/Linter) validates your RAML files in Atom.
+This linter plugin for [Linter](https://github.com/AtomLinter/Linter) validates your [RAML](http://raml.org) files in [Atom](https://atom.io/).
 
 It detects RAML files by extension (expects file name to be *.raml).
-[RAML](http://raml.org) is an API definition language.
 
 ![linter-raml in action](./linter-raml-in-action.png)
 
@@ -25,7 +24,7 @@ You can configure this package by opening its settings view (`ctrl+,` then selec
 ## Contributing
 
 You think it lacks a feature ? Spot a bug ? Unsufficient documentation ?
-Any contribution is welcome, here are a few contribution guidelines:
+Any contribution is welcome, below are a few contribution guidelines but first get a look at [atom contribution guidelines](https://atom.io/docs/v0.186.0/contributing):
 
 1. Git
   1. Fork the plugin repository.
