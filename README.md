@@ -5,7 +5,7 @@ This linter plugin for [Linter](https://github.com/AtomLinter/Linter) validates 
 
 It detects RAML files by extension (expects file name to be *.raml).
 
-![linter-raml in action](./linter-raml-in-action.png)
+![linter-raml in action](https://raw.githubusercontent.com/quilicicf/linter-raml/master/linter-raml-in-action.png)
 
 The underlying validation tool is [RAML JS parser](https://github.com/raml-org/raml-js-parser).
 
