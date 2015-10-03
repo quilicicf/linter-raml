@@ -13,10 +13,6 @@ parser = new (raml.RamlParser)(reader: new (raml.FileReader)((file) ->
 
 module.exports =
   config:
-    enableNotice:
-      type: 'boolean'
-      title: 'Enable Notice Messages'
-      default: false
     lintOnFly:
       type: 'boolean'
       title: 'Lint on fly'
@@ -24,9 +20,6 @@ module.exports =
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.config.observe 'linter-raml.enableNotice',
-      (enableNotice) =>
-        @enableNotice = enableNotice
     @subscriptions.add atom.config.observe 'linter-raml.lintOnFly',
       (lintOnFly) =>
         @lintOnFly = lintOnFly
