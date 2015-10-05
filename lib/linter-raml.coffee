@@ -52,6 +52,7 @@ module.exports =
   provideLinter: ->
     helpers = require('atom-linter')
     provider =
+      name: 'RAML'
       grammarScopes: ['source.raml']
       scope: 'file'
       lintOnFly: @lintOnFly
