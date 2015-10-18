@@ -1,3 +1,6 @@
+## 0.2.0 - Multi-file
+* Add support for multi-file definitions validation
+
 ## 0.1.2 - Cleaning
 * Remove useless configuration
 

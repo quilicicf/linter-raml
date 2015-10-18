@@ -5,11 +5,23 @@ This linter plugin for [Linter](https://github.com/AtomLinter/Linter) validates 
 
 It detects RAML files by extension (expects file name to be *.raml).
 
-![linter-raml in action](https://raw.githubusercontent.com/quilicicf/linter-raml/master/linter-raml-in-action.png)
-
 The underlying validation tool is [RAML JS parser](https://github.com/raml-org/raml-js-parser).
 
 For a full RAML editing experience, install the [RAML package](https://atom.io/packages/raml).
+
+## Linter-RAML in application
+
+### Single-file validation
+
+![linter-raml in action](https://raw.githubusercontent.com/quilicicf/linter-raml/master/linter-raml-in-action.png)
+
+### Multi-file validation
+
+If the RAML file includes another file containing errors, the linter will try to find an include statement to the incriminated file in the main file and place the error notification on the said include statement line.
+
+![linter-raml in action](https://raw.githubusercontent.com/quilicicf/linter-raml/master/linter-raml-multi-file.png)
+
+If no include statement is found, which can happen in case of double inclusion and/or non straigth-forward paths (for test/../test/file.raml the include statement searched will be test/file.raml for example), the linter will fall back to displaying the error on the first line of the main definition file.
 
 ## Installation
 
