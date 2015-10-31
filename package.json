@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "atom-linter": "^3.0.0",
-    "raml-parser": "^0.8.11"
+    "raml-parser": "^0.8.12"
   },
   "providedServices": {
     "linter": {
       "versions": {
-        "1.0.0": "provideLinter"
+        "1.10.0": "provideLinter"
       }
     }
   }
