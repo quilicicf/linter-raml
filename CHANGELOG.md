@@ -1,3 +1,7 @@
+## 0.2.1 - Doc & dependencies
+* Upgrade raml-js-parser
+* Switch link to contribution guidelines to header-precise link
+
 ## 0.2.0 - Multi-file
 * Add support for multi-file definitions validation
 * Fix link to contribution guidelines
