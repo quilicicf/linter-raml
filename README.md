@@ -1,6 +1,8 @@
 linter-raml
 =========================
 
+[![Dependency Status](https://david-dm.org/quilicicf/linter-raml.svg)](https://david-dm.org/quilicicf/linter-raml)
+
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) validates your [RAML](http://raml.org) files in [Atom](https://atom.io/).
 
 It detects RAML files by extension (expects file name to be *.raml).
