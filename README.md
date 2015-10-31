@@ -36,7 +36,7 @@ You can configure this package by opening its settings view (`ctrl+,` then selec
 ## Contributing
 
 You think it lacks a feature ? Spot a bug ? Unsufficient documentation ?
-Any contribution is welcome, below are a few contribution guidelines but first get a look at [atom contribution guidelines](https://github.com/atom/atom/blob/master/CONTRIBUTING.md):
+Any contribution is welcome, below are a few contribution guidelines but first get a look at [atom contribution guidelines](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#styleguides):
 
 1. Git
   1. Fork the plugin repository.
