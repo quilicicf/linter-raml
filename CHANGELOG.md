@@ -1,3 +1,7 @@
+## 0.2.2 - Dependencies
+* Upgrade atom-linter dependency to ^4.0.1
+* Upgrade raml-js-parser dependency to ^0.8.14
+
 ## 0.2.1 - Doc & dependencies
 * Upgrade raml-js-parser
 * Switch link to contribution guidelines to header-precise link
