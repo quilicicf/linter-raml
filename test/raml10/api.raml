@@ -1,0 +1,10 @@
+#%RAML 1.0
+title: My API
+mediaType: application/json
+traits:
+  simpleTrait: !include traits/trait.raml
+types:
+  IncludedType: !include types/includedType.raml
+/orgs/{orgId}:
+  get:
+  is: [simpleTrait]
