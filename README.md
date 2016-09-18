@@ -1,15 +1,23 @@
 linter-raml
 =========================
 
+## RAML 1.0 is now supported !
+
 [![Dependency Status](https://david-dm.org/quilicicf/linter-raml.svg)](https://david-dm.org/quilicicf/linter-raml)
 
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) validates your [RAML](http://raml.org) files in [Atom](https://atom.io/).
 
-It detects RAML files by extension (expects file name to be *.raml).
+It detects RAML files by extension (expects file name to be `*.raml`).
 
-The underlying validation tool is [RAML JS parser](https://github.com/raml-org/raml-js-parser). The parser will be switched to [its new version](https://github.com/raml-org/raml-js-parser2) to support RAML 1.0 once a final version is released.
+The underlying validation tool is [RAML JS parser](https://www.npmjs.com/package/raml-1-parser).
 
 For a full RAML editing experience, install the [RAML package](https://atom.io/packages/raml).
+
+## Ignore files
+
+If you don't want the linter to process some files, just add the following line under the shebang:
+
+`#linter-raml/ignore`
 
 ## Linter-RAML in application
 
@@ -19,11 +27,9 @@ For a full RAML editing experience, install the [RAML package](https://atom.io/p
 
 ### Multi-file validation
 
-If the RAML file includes another file containing errors, the linter will try to find an include statement to the incriminated file in the main file and place the error notification on the said include statement line.
+If the RAML file includes another file containing errors, you can find the errors by switching the linter in `Project` mode (the switch is at the bottom-left of the editor). All errors will then appear, you can click on the file name to open the file in Atom.
 
 ![linter-raml in action](https://raw.githubusercontent.com/quilicicf/linter-raml/master/linter-raml-multi-file.png)
-
-If no include statement is found, which can happen in case of double inclusion and/or non straigth-forward paths (for test/../test/file.raml the include statement searched will be test/file.raml for example), the linter will fall back to displaying the error on the first line of the main definition file.
 
 ## Installation
 
