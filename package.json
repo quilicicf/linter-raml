@@ -1,7 +1,7 @@
 {
   "name": "linter-raml",
   "main": "./lib/linter-raml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lint RAML documentation on the fly using raml-js-parser",
   "repository": "https://github.com/quilicicf/linter-raml",
   "license": "MIT",
