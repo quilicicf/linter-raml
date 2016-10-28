@@ -1,9 +1,15 @@
 {CompositeDisposable} = require 'atom'
-parser = require 'raml-1-parser'
-path = require 'path'
-_ = require 'lodash'
+parser = undefined
+path = undefined
+_ = undefined
+IGNORE_FILE_REGEX = /\n#[ \t]*linter-raml\/ignore\s*/
 
-IGNORE_FILE_REGEX=/\n#[ \t]*linter-raml\/ignore\s*/
+setTimeout () ->
+  parser = require 'raml-1-parser'
+  path = require 'path'
+  _ = require 'lodash'
+  , 0
+
 
 module.exports =
   config:
@@ -28,6 +34,9 @@ module.exports =
   #
   # Returns an empty array if the RAML definition is valid, the list of error messages otherwise
   validate: (text, mainFilePath) ->
+    if !path || !parser || !_
+      return []
+
     AST = parser.loadApiSync(mainFilePath)
     errors = AST.errors()
     if !errors?.length
@@ -60,7 +69,7 @@ module.exports =
       lint: (textEditor) =>
         text = textEditor.getText()
         filePath = textEditor.getPath()
-        
+
         if IGNORE_FILE_REGEX.test text
           return []
 
