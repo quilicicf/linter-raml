@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "atom-linter": "^8.0.0",
-    "raml-1-parser": "^1.1.2",
-    "lodash": "^4.15.0"
+    "raml-1-parser": "^1.1.6",
+    "lodash": "^4.16.4"
   },
   "providedServices": {
     "linter": {
