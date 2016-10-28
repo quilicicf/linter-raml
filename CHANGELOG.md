@@ -1,3 +1,6 @@
+## 1.0.1 - Improve startup time
+* Require npm modules in a time out to improve startup time (~500ms -> ~70ms)
+
 ## 1.0.0 - Support RAML 1.0
 * Support for RAML 1.0
 * Add option to ignore some files
