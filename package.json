@@ -10,7 +10,7 @@
     "atom": ">=0.180.0 <2.0.0"
   },
   "dependencies": {
-    "atom-linter": "^8.0.0",
+    "atom-linter": "^10.0.0",
     "raml-1-parser": "^1.1.6",
     "lodash": "^4.16.4"
   },
