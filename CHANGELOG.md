@@ -1,3 +1,6 @@
+## 1.0.2 - Upgrade atom-linter
+* Upgrade atom-linter dependency to ^10.0.0
+
 ## 1.0.1 - Improve startup time
 * Require npm modules in a time out to improve startup time (~500ms -> ~70ms)
 
